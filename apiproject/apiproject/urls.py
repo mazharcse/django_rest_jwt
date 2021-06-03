@@ -18,13 +18,14 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
 from rest_framework import routers
-from apiapp.views import CountryViewSet, StateViewSet, AddressViewSet
+from apiapp.views import CountryViewSet, StateViewSet, AddressViewSet, AddressDetailViewSet
 
 
 router = routers.DefaultRouter()
 router.register("countries", CountryViewSet)
 router.register("states", StateViewSet)
 router.register("address", AddressViewSet)
+router.register("address_detail", AddressDetailViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
