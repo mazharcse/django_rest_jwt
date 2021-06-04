@@ -19,6 +19,7 @@ from django.urls import path
 from django.conf.urls import url, include
 from rest_framework import routers
 from apiapp.views import CountryViewSet, StateViewSet, AddressViewSet, AddressDetailViewSet
+from rest_framework_simplejwt import views as jwt_views
 
 
 router = routers.DefaultRouter()
@@ -30,4 +31,6 @@ router.register("address_detail", AddressDetailViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("projectapi/", include(router.urls)),
+    path('projectapi/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('projectapi/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
 ]
