@@ -1,5 +1,5 @@
 # API Project Overview
-It is simple Django REST api project.
+It is simple Django REST api project with JWT authentication.
 This project has 4 api to return countries, states and address information which are stored in Database.
 
 ### Project Requirements
@@ -10,10 +10,10 @@ After installation of **Python and pip**, create and activate virtual environmen
     
   
 ### Project Setup 
-- create a folder zs_project
-- `cd zs_project`
+- create a folder zs_project_git
+- `cd zs_project_git`
 - `$ git clone https://github.com/mazharcse/zs_project.git`
-- `cd apiproject`
+- `cd zs_project/apiproject`
 - `pip install -r requirements.txt`
 - `python manage.py migrate`
 - `python manage.py makemigrations`
