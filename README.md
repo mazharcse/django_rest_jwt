@@ -10,10 +10,10 @@ After installation of **Python and pip**, create and activate virtual environmen
     
   
 ### Project Setup 
-- create a folder zs_project_git
-- `cd zs_project_git`
-- `$ git clone https://github.com/mazharcse/zs_project.git`
-- `cd zs_project/apiproject`
+- create a folder django_rest_jwt_git
+- `cd django_rest_jwt_git`
+- `$ git clone https://github.com/mazharcse/django_rest_jwt.git`
+- `cd django_rest_jwt/apiproject`
 - `pip install -r requirements.txt`
 - `python manage.py migrate`
 - `python manage.py makemigrations`
